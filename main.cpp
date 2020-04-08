@@ -26,10 +26,4 @@ int i = 0;
     }
 }
 
-int main()
-{
-
-    readAndConvert();
-    return 0;
-}
 
