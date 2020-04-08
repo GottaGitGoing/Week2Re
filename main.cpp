@@ -1,11 +1,9 @@
 #include <iostream>
 #include <string>
 
-
-int main()
+void readAndConvert() 
 {
-
-    int i = 0;
+int i = 0;
     int limit;
     std::string company;
     std::string description;
@@ -24,8 +22,14 @@ int main()
     {
         std::cin >> amount >> price >> st_name;
         i++;
-        std::cout << st_name << ": " << amount*price << std::endl;
+        std::cout << st_name << ": " << floor(amount*price) << std::endl;
     }
-    
+}
+
+int main()
+{
+
+    readAndConvert();
+    return 0;
 }
 
